@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Demo Wedding Planner</title>
+    <style type="text/css">
+        .parallax2 {
+         background-image: url("parallex.png");
+         min-height: 600px; 
+         width:100%;
+         background-attachment: fixed;
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+        }
+        .card{
+          transition: 0.5s ease;
+        }
+        .card:hover{
+          transform:translate(0px,-70px);
+          transform: scale(1.4,1.4);
+        }
+        #contact-us{
+          width:50%;
+        }
+        .foot-1{
+          background-color: rgb(65, 63, 63);
+          width:100%;
+        }
+        .move-foot-elem{
+          margin-right: 25%;
+        }
+        .foot-2{
+          background-color: rgb(29, 29, 29);
+          width:100%;
+        }
+        .divison-1{
+          width: 50%;
+          margin-top: 2px;
+          margin-bottom: 2px;
+        }
+        .div-1{
+          float:right;
+          padding-left: 2px;
+        }
+        @media (max-width: 767.98px) {
+          .profile-bg {
+          background : none;
+          }
+          #contact-us{
+            width:75%;
+          }
+        }
+    </style>
+  </head>
+  <body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light" style = "font-family:Verdana, Geneva, sans-serif">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" width="30" height="30" alt="" class="bg-dark p-1" loading="lazy">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index.html"><i class="fa fa-home"></i> Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal1">About</a>
+              </li>
+              <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <img src="logo.png" width="50" height="50" alt="" class="bg-dark p-1 m-2 d-flex justify-content-center" loading="lazy">
+                      <h5 class="modal-title" id="exampleModalLabel">About EMG</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>We are the Luxury Wedding Planners for clients demanding first class service and world-class events. From princesses to pop stars and from celebrations in Delhi & India to destination weddings and social events all across globe, we plan elegant, stylish, glamorous and fun celebrations. Our discerning, international clientele include aristocrats, people of note, high net-worth individuals and families seeking unique and meaningful celebrations. We strive to be the best at what we do and several prestigious international publications have been kind enough to state that we are.We are proud of our international reputation for creating exclusive events and delivering first-class service with discretion. Our team enjoys working with diverse clients from across the globe. Our bespoke international service is tailored to their individual needs.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <li class="nav-item">
+                <a class="nav-link" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">What We Do</a>
+              </li>
+              <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <img src="logo.png" width="50" height="50" alt="" class="bg-dark p-1 m-2 d-flex justify-content-center" loading="lazy">
+                      <h5 class="modal-title" id="exampleModalLabel">WHAT WE DO?</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>EMG is a Luxury Wedding Planners for clients demanding luxury wedding and world-class events. We provide Best wedding Vendors, Wedding Invitations, Best wedding Venues, Best wedding Decorations, Best wedding Makeup Artists, Destination weddings , Destination Wedding Planning Services, Floral Decore, Entertainment and Artists, Wedding Hotels , Wedding Venues, Beach Wedding, Fort Weddings, Wedding Catering , Wedding Photography, Weddings in Thailand, Weddings in GOA, Weddings in Dubai, Weddings in Turkey, Wedding in Bali, Wedding in USA, Wedding in UK, Wedding in Greece, Wedding in kerla From princesses to pop stars and from celebrations in Delhi & India to destination weddings and social events all across globe, we plan elegant, stylish, glamorous and fun celebrations.Our discerning, international clientele include aristocrats, people of note, high net-worth individuals and families seeking unique and meaningful celebrations. We strive to be the best at what we do and several prestigious international publications have been kind enough to state that we are.We are proud of our international reputation for creating exclusive events and delivering first-class service with discretion. Our team enjoys working with diverse clients from across the globe. Our bespoke international service is tailored to their individual needs.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <li class="nav-item">
+                <a class="nav-link" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3">Themes</a>
+              </li>
+              <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <img src="logo.png" width="50" height="50" alt="" class="bg-dark p-1 m-2 d-flex justify-content-center" loading="lazy">
+                      <h5 class="modal-title" id="exampleModalLabel">WEDDING THEMES</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="./pic01.png" width="450" height="200"/>
+                      <br/>
+                      <br/>
+                      <p><strong>1. Goa Wedding</strong><br/>No venue has ever matched our very own Goa , the weddings in Goa are not only magnificent but unique as well. We have best deals waiting for you.</p>
+                      <br/>
+                      <p><strong>2. Fort Wedding</strong><br/>Fort wedding is certifiably not another wonder in India. These are the weddings begrudged by numerous and delighted in by a limited handful. Individuals from all edges of the world longing to tie the marital bunches in a great style on the superb place that is known for India. India, with hundreds of years of Fort rule is perhaps the main competitors for Fort wedding. With all around re-established Fort of illustrious past the couples get an opportunity to experience their since a long time ago appreciated dream on their fantasy weddings. We provide services in Jaipur, Jaisalmer, jodhpur, Bikaner, devigarh, Samode, neemrana, Sariska, Chomu Palace.</p>
+                      <br/>
+                      <p><strong>3. Beach  Wedding</strong><br/>Weddings have taken another trip in this day and age. Today there is destination wedding and beach wedding is quite possibly the most favoured styles of marriage. The peaceful sea and the breeze blowing is the ideal background for an unadulterated and promising event like marriage. We provide Our Services Starting From Goa to Kerala to Mauritius ETC.
+                      </p>
+                      <br/>
+                      <p><strong>4. Dubai Wedding</strong><br/>Dubai has developed itself as the prestige and the upmarket wedding market it has many  venues and the beautiful Destination at an affordable price.</p>
+                      <br/>
+                      <p><strong>5. Kerla Wedding</strong><br/>A sought after destination for marriage, the Kerala sea shores are quintessentially the most quieting and reveling area for marriage in India.</p>
+                      <br/>
+                      <p><strong>6. Himalayan wedding</strong><br/>Northing to Beat In a Mountain for your Varmala From Mussorie to Srinagar to Abu-Dhabi . </p>
+                      <br/>
+                      <p><strong>7. Metropolitan Wedding</strong><br/>India has upmarket like Delhi Mumbai Kolkata Pune Chennai ETC. which has got  beautiful 5 star properties and resorts which provide exotic Beautiful place for Your Wedding . </p>
+                      <br/>
+                      <p><strong>8. Royal Wedding</strong><br/>Royal Wedding Start From Your home or You can Book a banquet and fort We provide Service at an affordable Price .</p>
+                      <br/>
+                      <p><strong>9. Thailand Wedding</strong><br/>All year daylight, fantastic worth and heavenly nearby cooking, Thailand is an untainted decision for a marriage at an exotic location. Be guided in your arranging by our accomplished and learned group who remove the mystery from planning a wedding in Thailand with remarkable outcomes. Pursuing beginning conferences around your thoughts, special plans, favored style, bunch size, and financial plan, Take us to Thailand causes you pick the best scene and visitor convenience choices. We additionally suggest and attempt the booking and installment of your wedding options including food and refreshment, celebrant, blossoms, hair and make-up, diversion, photography and transport decisions. Counseling at all times, on outright personalisation and oblige singular extravagance levels at most extreme worth. From a shop resort to a detached wilderness manor, our nearby understanding, believed providers and genuine methodology leave nothing to risk when arranging your Thailand wedding.</p>
+                      <br/>
+                      <p><strong>10. Indian Rural Wedding</strong><br/>Indian Rural Wedding are the Part of Indian Culture We plan a classic indian Rural wedding at an affordable price.</p>
+                      <br/>
+                      <p><strong>11. Rajasthani Wedding</strong><br/>EMG offers everything your fantasy wedding ought to: a sentimental, spectacular scene where your loved ones can celebrate in style, perfect occasion coordination, master organizers, VIP the executives, and bother free run time game plans. Investigate probably the most sentimental wedding objections in Rajasthan and comprehensive redid picturesque marriage bundles. We would gladly make ideas for the ideal area for your picturesque marriage in Rajasthan, contingent upon the style of function you need.</p>
+                      <br/>
+                      <p><strong>12. Lake side wedding</strong><br/>Whether you’re looking for an all-inclusive wedding and reception package or a simple outdoor ceremony, Lakeside Weddings has an option that will suit your needs. Our top-rated Wedding Packages have beautiful lakeside and garden scenery that will create the right mood. We have unique ceremonies with romantic outdoor venues; each with beautiful greenery, trees, and breath-taking views!</p>
+                      <br/>
+                      <p><strong>12. Lake side wedding</strong><br/>Whether you’re looking for an all-inclusive wedding and reception package or a simple outdoor ceremony, Lakeside Weddings has an option that will suit your needs. Our top-rated Wedding Packages have beautiful lakeside and garden scenery that will create the right mood. We have unique ceremonies with romantic outdoor venues; each with beautiful greenery, trees, and breath-taking views!</p>
+                      <br/>
+                      <p><strong>13. Full moon Wedding</strong><br/>The ancient Greeks believed that marriages consummated during the full Moon were the most prosperous and happiest. EMG provides Services at an affordable price.</p>
+                      <br/>
+                      <p><strong>14. Theme Based Wedding</strong><br/>Planning a theme based wedding as per as your requirements is our speciality . Providing a world class services for your wedding.</p>
+                      <br/>
+                      <p><strong>15. Island Wedding</strong><br/>EMG specializes in luxury destination weddings, and because most of our couples are planning their big day from the other side of the deep blue sea. However, each couple has unique needs, so we have created customized planning packages that will seamlessly get you from now to “I DO!”</p>
+                      <br/>
+                      <p><strong>16. Andaman Wedding</strong><br/>The noteworthy island of Andaman has all the earmarks of being relaxed made by Mother Nature. The spot which is considered as perhaps the most extraordinary areas in India offers a normally enhanced atmosphere. Andaman Island Weddings are getting famous among the couples who are not able to follow the generally accepted way to go and searching for an outlandish area for their fantasy weddings. This bunch of 572 islands is packed with widely varied vegetation and is likewise an ideal special night objective.</p>
+                      <br/>
+                      <p><strong>17. Greece Wedding</strong><br/>Romantic sunsets, beautiful beaches, the pure blue sea colour and other hidden beauties make Greece and its islands a paradise to be discovered.  That is why Greece is one of the world’s most unforgettable wedding destinations!
+                      </p>
+                      <br/>
+                      <p><strong>18. Mauritius wedding</strong><br/>Postcard-wonderful sea shores bordered by palm trees, welcoming turquoise waters, tasty nearby dishes and a mixed culture—there are not many spots to get hitched as glorious as Mauritius. What's more, in the event that you and your better half have settled on this inconceivable tropical island as the objective for your wedding, you have settled on an extraordinary decision. The actual thought about your fantasy wedding in Mauritius likely makes you need to get a date and convey the solicitations immediately. However, arranging an exotic marriage can be somewhat difficult, so to guarantee that the cycle is calm and the result is all that you could need, here's elite of ten things you need to think about getting hitched in Mauritius.</p>
+                      <br/>
+                      <p><strong>19. Turkey weddings</strong><br/>Luxury Wedding in Turkey works in wedding and occasion arranging and flower plan. In wedding arranging, our objective is to guarantee your experience is customized, consistent and delightful. Since we tailor our occasions to the cravings of every customer, all Wedding Planner occasions are "made-to-gauge." We accept that every one of the bundles are a relic of days gone by—and value making a rundown of administrations on an individual and explicit premise taking all things together around Turkey. Our skill ranges across numerous occasion types - weddings, elopements, recommendations, pledge reestablishments, birthday events, commemorations, and more. At the point when an occasion arranging administration is made particularly for you, there are no constraints</p>
+                      <br/>
+                      <p><strong>20. Romantic weddings</strong><br/>Planning a Romantic wedding is our specilization at an affordable price .</p>
+                      <br/>
+                      <p><strong>21. Intimate weddings</strong><br/>Intimate weddings (likewise called miniature weddings) are purposefully little festivals with just a modest bunch of visitors in participation. This may come as a shock to those who've been following our photography for some time, however HALF of Adventure Instead's couples bring their family along on their big day.</p>
+                      <br/>     
+                      <p><strong>22. Magnificent weddings</strong><br/>Providing Wedding Services at a larger scale and we at EMG Provide Best Service For Magnificent wedding . From Venue Booking to Decoration to catering .</p>
+                      <br/>       
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <li class="nav-item">
+                <a class="nav-link" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal4">Pre-Wedding</a>
+              </li>
+              <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <img src="logo.png" width="50" height="50" alt="" class="bg-dark p-1 m-2 d-flex justify-content-center" loading="lazy">
+                      <h5 class="modal-title" id="exampleModalLabel">PRE WEDDING THEMES</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="./pic02.png" width="450" height="200"/>
+                      <br/>
+                      <br/>
+                      <ul type="unordered">
+                        <li>Hot Air Ballon Party</li>
+                        <li>Great Gatsby</li>
+                        <li>Full Moon Party</li>
+                        <li>Pop Art</li>
+                        <li>Flamingo Luau</li>
+                        <li>Arabian Nights</li>
+                        <li>1980’s</li>
+                        <li>Barbie Dream House</li>
+                        <li>Superhero’s</li>
+                        <li>Conture Ballons</li>
+                        <li>Game of Thrones</li>
+                        <li>Car Theme</li>
+                        <li>Tropical Party</li>
+                        <li>James Bond</li>
+                        <li>Silver Soiree</li>
+                        <li>Glow in Dark</li>
+                        <li>Bubbles and Bowties</li>
+                      </ul> 
+                          </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <li class="nav-item">
+                <a class="nav-link" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal5">Venue</a>
+              </li>
+              <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel5" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <img src="logo.png" width="50" height="50" alt="" class="bg-dark p-1 m-2 d-flex justify-content-center" loading="lazy">
+                      <h5 class="modal-title" id="exampleModalLabel">WEDDING VENUE</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Wedding Venues are most important, we have tie up all across the globe for all kind of wedding choices whether it is in 5 star in Delhi or a beach wedding in Thailand. We assure you best venues as per your choices.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <li class="nav-item">
+                <a class="nav-link" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal6">Destination</a>
+              </li>
+              <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel6" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <img src="logo.png" width="50" height="50" alt="" class="bg-dark p-1 m-2 d-flex justify-content-center" loading="lazy">
+                      <h5 class="modal-title" id="exampleModalLabel">DESTINATION</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="./pic01.png" width="450" height="200"/>
+                      <br/>
+                      <br/>
+                      <p>We are Experts in getting best destination wedding Hotels and events . As you are not in home venue we take special care in choosing the venue and hotel .If your wedding bells have started ringing already, then don’t waste time and plan a lavish wedding at one of these wedding destinations in India and experience the most blissful time of your lifetime. </p>
+                      <br/>
+                      <p><strong>1. Luxury WEDDING DECORATIONS</strong><br/>Look no further for wedding décor inspiration and ideas. From Mandap to Wedding Stage, and everything in between.We have expertise in Big Set ups and Tents. Our Structure team ensures to create Best Creative Weddings Decor. Designs from Preston Bailey to our own internal Team.</p>
+                      <br/>
+                      <p><strong>2. Exotic FLOWER DECORATION</strong><br/>Exotic Florals are our expertise, we have various in-house and outsourced Floral decor' team to make your wedding look magnificent.</p>
+                      <br/>
+                      <p><strong>3. Vintage Wedding Decoration</strong><br/>Draw motivation from a very long time past on the off chance that you need a vintage style for your wedding. Perhaps the most straightforward approaches to channel this is through your wedding outfit and excellence look. Concerning the ceremony and gathering, you can depend on antique-looking stylistic layout, as endured entryways and worn-in wood seats, to additionally embody a vintage-propelled wedding. For your last hoorah, polish off the vintage topic by heading out in an exemplary escape vehicle, similar to an old Porsche or Volkswagen.</p>
+                      <br/>
+                      <p><strong>4. Celestial Wedding Decoration</strong><br/>Your love was written in the stars, so make an interpretation of that attitude into your wedding topic. Indeed, even your dress can channel a definitive celestial vibes. The sky's the cutoff (in a real sense) with this topic, so get inventive with a world enlivened star grouping visitor book, cake, and ceremony background.</p>
+                      <br/>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <li class="nav-item">
+                <a class="nav-link" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal7">Achievements</a>
+              </li>
+              <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel7" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <img src="logo.png" width="50" height="50" alt="" class="bg-dark p-1 m-2 d-flex justify-content-center" loading="lazy">
+                      <h5 class="modal-title" id="exampleModalLabel">VERIFIED ACHIEVEMENTS</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="./eema2010 (1).jpg" width="450" height="220"/>
+                      <br/>
+                      <br/>
+                      <img src="./eema2010s.jpg" width="450" height="220"/>
+                      <br/>
+                      <br/>
+                      <img src="./eema2012.jpg" width="450" height="220"/>
+                      <br/>
+                      <br/>
+                      <img src="./eema2012s.jpg" width="450" height="220"/>
+                      <br/>
+                      <br/>
+                      <img src="./eema31march2015.jpg" width="450" height="220"/>
+                      <br/>
+                      <br/>
+                      <img src="./eema31march2015s.jpg" width="450" height="220"/>
+                      <br/>
+                      <br/>
+                      <img src="./eventfaqs.jpg" width="450" height="220"/>
+                      <br/>
+                      <br/>
+                      <img src="./eventfaqss.jpg" width="450" height="220"/>
+                      <br/>
+                      <br/>
+                      <img src="./leaderoftomorrow.jpg" width="450" height="220"/>
+                      <br/>
+                      <br/>
+                      <img src="./leaderoftomorrow02.jpg" width="450" height="220"/>
+                      <br/>
+                      <br/>
+                      <img src="./leaderoftomorrow02s.jpg" width="450" height="220"/>
+                      <br/>
+                      <br/>
+                      <img src="./leaderoftomorrows.jpg" width="450" height="220"/>
+                      <br/>
+                      <br/>
+
+
+                      
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#contact-us">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal1" class="text-white"><img class="card-img" src="./01.jpg"></a>
+      <div class="">
+        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal2" class="text-white"><img class="divison-1" src="./02.jpg"></a>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal4" class="text-white"><img class="divison-1 div-1" src="./04.jpg"></a>
+      </div>     
+      <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal3" class="text-white"><img class="card-img" src="./03.jpg"></a>
+      <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal6" class="text-white"><img class="card-img" src="./05.jpg"></a>
+      <div class="">
+        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal5" class="text-white"><img class="divison-1" src="./06.jpg"></a>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal3" class="text-white"><img class="divison-1 div-1" src="./07.jpg"></a>
+      </div>  
+      <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal7" class="text-white"><img class="card-img" src="./08.jpg"></a>
+        <div id="contact-us" class="container my-5 justify-content-center">
+            <h1 class="text-center">Contact Us</h1>
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Work Email</label>
+                <input type="email" class="form-control" >
+              </div>
+              <div class="form-group">
+                <label for="exampleInputSubject">Subject</label>
+                <input type="email" class="form-control" >
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+              </div>
+              <button type="submit" class="btn btn-dark mt-2">Submit</button>
+            </form>
+          </div>
+          <div class="foot-1">
+              <div class="container">
+            <nav class="navbar">
+            <ul class="navbar-nav mr-auto ml-5 mt-3">
+              <li class="nav-item">
+                  <a class="navbar-brand" href="#">
+                    <img src="logo.png" width="30" height="30" alt="" loading="lazy">
+                </a>
+             </li>
+             <li class="nav-item"><a href="#" class="fa fa-facebook" style="color:#3B5998;"><span class="text-white"> Facebook</span></a></li>
+             <li class="nav-item"><a href="#" class="fa fa-instagram" style="color:#ea4c89"><span class="text-white"> Instagram</span></a></li>
+             <li class="nav-item"><a href="#" class="fa fa-linkedin" style="color:#007bb5"><span class="text-white"> Linkedin</span></a></li>
+             <li class="nav-item"><a href="#" class="fa fa-youtube" style="color:#bb0000"><span class="text-white"> Youtube</span></a></li>
+             <li class="nav-item"><a href="#" class="fa fa-twitter" style="color:#55ACEE;"><span class="text-white"> Twitter</span></a></li>
+            </ul>
+            <ul class="navbar-nav move-foot-elem justify-content-center">
+              <li class="nav-item text-muted">Links</li>
+              <li class="nav-item"><a href="/index.html" class="text-white">Home</a></li>
+              <li class="nav-item"><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal1" class="text-white">About</a></li>
+              <li class="nav-item"><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal7" class="text-white">Achievements</a></li>
+              <li class="nav-item"><a href="#contact-us" class="text-white">Contact Us</a></li>
+            </ul>
+            </nav>
+        </div>
+          </div>
+          <p class="foot-2 text-muted pl-5 mb-0">&copy; EMG Entertainment 2021</p>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
